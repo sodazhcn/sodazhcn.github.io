@@ -18,22 +18,19 @@
     <title>sodazhcn导航</title>
     <script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
     <script>
-        function checkHttps() {
+        function checkHttps () {
             BaiduHttps.useHttps();
-        }
-        function g(formname) {
+        };
+        function baiduWithHttps (formname) {
             var data = BaiduHttps.useHttps();
-            var url = '';
-            url = data.s == 0 ? "http://www.baidu.com/baidu" : 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-            if (formname.s[1].checked) {
-                formname.ct.value = "2097152";
+            if (data.s === 0) {
+                return true;
             }
             else {
-                formname.ct.value = "0";
+                formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+                return true;
             }
-            formname.action = url;
-            return true;
-        }
+        };
     </script>
 </head>
 <body background="images/zuozuomu.jpg"
@@ -42,22 +39,12 @@
 <center>
     <h1>导自己的航</h1>
     <br/>
-
-    <form class="form-inline" name="f1" onsubmit="return g(this)" target="_blank">
-        <input type="text" class="form-control" placeholder="百度一下"
-               style="width: 300px" name="word"
-               onfocus="checkHttps" size="30" maxlength="100" id="t"/>
-
+    <form class="form-inline" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+        <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+        <input class="form-control" placeholder="百度一下" type="text" style="width: 300px" onfocus="checkHttps" name="word" id="t" size="30">
+        <input style="display: none" type="submit"value="百度搜索">
         <div class="btn btn-default"
              onclick="document.getElementById('t').value=''">清空
-        </div>
-        <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-        <input name="cl" type="hidden" value="3">
-        <input name="ct" type="hidden">
-        <input name="si" type="hidden" value="www.baidu.com">
-
-        <div style="display: none">
-            <input name="s" type="radio"> 互联网<input name="s" type="radio" checked> www.baidu.com
         </div>
     </form>
     <br/>
