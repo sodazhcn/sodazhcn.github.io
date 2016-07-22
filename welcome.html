@@ -39,32 +39,29 @@
 <body>
 
 <center>
+    <h1>导自己的航</h1>
+    <br/>
+
+    <form class="form-inline" name="f1" onsubmit="return g(this)" target="_blank">
+        <input type="text" class="form-control" placeholder="百度一下"
+               style="width: 300px" name="word"
+               onfocus="checkHttps" size="30" maxlength="100" id="t"/>
+
+        <div class="btn btn-default"
+             onclick="document.getElementById('t').value=''">清空
+        </div>
+        <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
+        <input name="cl" type="hidden" value="3">
+        <input name="ct" type="hidden">
+        <input name="si" type="hidden" value="www.baidu.com">
+
+        <div style="display: none">
+            <input name="s" type="radio"> 互联网<input name="s" type="radio" checked> www.baidu.com
+        </div>
+    </form>
+    <br/>
     <table class="table" style="width: 800px">
         <thead>
-        <h1>导自己的航</h1>
-        <br/>
-
-        <form name="f1" onsubmit="return g(this)" target="_blank">
-            <div class="form-group">
-                <div style="display: inline"><input type="text" class="form-control" placeholder="百度一下"
-                                                    style="width: 300px" name="word"
-                                                    onfocus="checkHttps" size="30" maxlength="100" id="t"/>
-                </div>
-                <br/>
-
-                <div class="btn btn-default" style="display: inline" onclick="document.getElementById('t').value=''">清空
-                </div>
-            </div>
-            <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-            <input name="cl" type="hidden" value="3">
-            <input name="ct" type="hidden">
-            <input name="si" type="hidden" value="www.baidu.com">
-
-            <div style="display: none">
-                <input name="s" type="radio"> 互联网<input name="s" type="radio" checked> www.baidu.com
-            </div>
-        </form>
-        <br/>
         </thead>
         <br/>
         <tbody>
