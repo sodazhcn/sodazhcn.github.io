@@ -8,8 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="static/img/index.ico">
-    <!-- Bootstrap core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootsdivap core CSS -->
+    <link href="static/css/bootsdivap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="static/css/welcome.css" rel="stylesheet">
@@ -24,11 +24,11 @@
         function baiduWithHttps (formname) {
             var data = BaiduHttps.useHttps();
             if (data.s === 0) {
-                return true;
+                return divue;
             }
             else {
                 formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
-                return true;
+                return divue;
             }
         };
     </script>
@@ -41,87 +41,82 @@
     <br/>
     <form class="form-inline" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
         <input name="tn" type="hidden" value="SE_zzsearchcode_shhzc78w">
-        <input class="form-control" placeholder="百度一下" type="text" style="width: 300px" onfocus="checkHttps" name="word" id="t" size="30">
+        <input class="form-condivol" placeholder="百度一下" type="text" style="width: 300px" onfocus="checkHttps" name="word" id="t" size="30">
         <input style="display: none" type="submit"value="百度搜索">
         <div class="btn btn-default"
              onclick="document.getElementById('t').value=''">清空
         </div>
     </form>
     <br/>
-    <table class="table" style="width: 800px;background-color: rgba(0,0,0,0.3);">
-        <thead>
-        </thead>
-        <br/>
-        <tbody>
-        <tr>
-            <td style="font-weight:bold">搜索</td>
-            <td><a target="_blank" href="http://www.baidu.com">百度</a></td>
-            <td><a target="_blank" href="http://www.google.com">谷歌</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">音乐</td>
-            <td><a target="_blank" href="http://www.xiami.com">虾米音乐</a></td>
-            <td><a target="_blank" href="http://music.163.com">网易云音乐</a></td>
-            <td><a target="_blank" href="http://mp3.baidu.com">百度音乐</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">社交</td>
-            <td><a target="_blank" href="https://wx.qq.com/">微信</a></td>
-            <td><a target="_blank" href="http://www.weibo.com">新浪微博</a></td>
-            <td><a target="_blank" href="http://www.renren.com">人人网</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">社区</td>
-            <td><a target="_blank" href="http://www.github.com">Github</a></td>
-            <td><a target="_blank" href="http://www.zhihu.com">知乎</a></td>
-            <td><a target="_blank" href="http://www.ganji.com">赶集网</a></td>
-            <td><a target="_blank" href="http://www.58.com">58同城</a></td>
-            <td><a target="_blank" href="http://pan.baidu.com">百度云盘</a></td>
-            <td><a target="_blank" href="http://www.jianshu.com">简书</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">视频</td>
-            <td><a target="_blank" href="http://www.youku.com">优酷</a></td>
-            <td><a target="_blank" href="http://yy4480.org">看电影</a></td>
-            <td><a target="_blank" href="http://www.letv.com">乐视</a></td>
-            <td><a target="_blank" href="http://www.iqiyi.com">爱奇艺</a></td>
-            <td><a target="_blank" href="http://www.poxiao.com/">放放电影</a></td>
-            <td><a target="_blank" href="http://cn163.net/archives/13322/">天天美剧</a></td>
-            <td><a target="_blank" href="http://www.dytt8.net/">电影天堂</a></td>
-            <td><a target="_blank" href="http://www.douyutv.com/directory/game/DOTA2">斗鱼</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">购物</td>
-            <td><a target="_blank" href="http://www.jd.com">京东</a></td>
-            <td><a target="_blank" href="http://www.taobao.com">淘宝</a></td>
-            <td><a target="_blank" href="http://www.alipay.com">支付宝</a></td>
-            <td><a target="_blank" href="http://www.kuaidi100.com/">快递100</a></td>
-            <td><a target="_blank" href="http://www.tmall.com/">天猫</a></td>
-            <td><a target="_blank" href="http://www.bj.10086.cn/index/12580mall/">12580</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">工具</td>
-            <td><a target="_blank" href="http://tool.chinaz.com/Tools/unixtime.aspx">时间转换</a></td>
-            <td><a target="_blank" href="http://jsoneditoronline.org/index.html">Json格式化</a></td>
-            <td><a target="_blank" href="https://www.processon.com/">流程图</a></td>
-            <td><a target="_blank" href="http://inloop.github.io/svg2android/http://inloop.github.io/svg2android/">svg2android</a>
-            </td>
-            <td><a target="_blank"
-                   href="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html">图标设计</a></td>
-            <td><a target="_blank" href="https://worktile.com/">团队协作</a></td>
-            <td><a target="_blank" href="https://designcode.io/sketch">UI设计</a></td>
-        </tr>
-        <tr>
-            <td style="font-weight:bold">综合</td>
-            <td><a target="_blank" href="http://bbs.pediy.com/">看雪</a></td>
-            <td><a target="_blank" href="http://itjuzi.com/">IT桔子</a></td>
-            <td><a target="_blank"
-                   href="http://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/invocation.html">JNI文档</a></td>
-            <td><a target="_blank" href="https://www.remotejobsexpert.com/">RemoteJob</a></td>
-            <td><a target="_blank" href="http://bbs.pcbeta.com/">远景</a></td>
-        </tr>
-        </tbody>
-    </table>
+    <div style="width: 800px;background-color: rgba(0,0,0,0.3);">
+    <div class="row">
+        <div style="font-weight:bold;display: inline" >搜索</div>
+        <div style="display: inline"><a target="_blank" href="http://www.baidu.com">百度</a></div>
+        <div style="display: inline"><a target="_blank" href="http://www.google.com">谷歌</a></div>
+    </div>
+        <div class="row">
+            <div style="font-weight:bold;display: inline">音乐</div>
+            <div style="display: inline"><a target="_blank" href="http://www.xiami.com">虾米音乐</a></div>
+            <div style="display: inline"><a target="_blank" href="http://music.163.com">网易云音乐</a></div>
+            <div style="display: inline"><a target="_blank" href="http://mp3.baidu.com">百度音乐</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">社交</div>
+            <div style="display: inline"><a target="_blank" href="https://wx.qq.com/">微信</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.weibo.com">新浪微博</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.renren.com">人人网</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">社区</div>
+            <div style="display: inline"><a target="_blank" href="http://www.github.com">Github</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.zhihu.com">知乎</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.ganji.com">赶集网</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.58.com">58同城</a></div>
+            <div style="display: inline"><a target="_blank" href="http://pan.baidu.com">百度云盘</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.jianshu.com">简书</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">视频</div>
+            <div style="display: inline"><a target="_blank" href="http://www.youku.com">优酷</a></div>
+            <div style="display: inline"><a target="_blank" href="http://yy4480.org">看电影</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.letv.com">乐视</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.iqiyi.com">爱奇艺</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.poxiao.com/">放放电影</a></div>
+            <div style="display: inline"><a target="_blank" href="http://cn163.net/archives/13322/">天天美剧</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.dytt8.net/">电影天堂</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.douyutv.com/directory/game/DOTA2">斗鱼</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">购物</div>
+            <div style="display: inline"><a target="_blank" href="http://www.jd.com">京东</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.taobao.com">淘宝</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.alipay.com">支付宝</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.kuaidi100.com/">快递100</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.tmall.com/">天猫</a></div>
+            <div style="display: inline"><a target="_blank" href="http://www.bj.10086.cn/index/12580mall/">12580</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">工具</div>
+            <div style="display: inline"><a target="_blank" href="http://tool.chinaz.com/Tools/unixtime.aspx">时间转换</a></div>
+            <div style="display: inline"><a target="_blank" href="http://jsoneditoronline.org/index.html">Json格式化</a></div>
+            <div style="display: inline"><a target="_blank" href="https://www.processon.com/">流程图</a></div>
+            <div style="display: inline"><a target="_blank" href="http://inloop.github.io/svg2android/http://inloop.github.io/svg2android/">svg2android</a>
+            </div>
+            <div style="display: inline"><a target="_blank"
+                   href="http://android-ui-utils.googlecode.com/hg/asset-studio/dist/icons-launcher.html">图标设计</a></div>
+            <div style="display: inline"><a target="_blank" href="https://worktile.com/">团队协作</a></div>
+            <div style="display: inline"><a target="_blank" href="https://designcode.io/sketch">UI设计</a></div>
+        </div>
+        <div>
+            <div style="font-weight:bold;display: inline">综合</div>
+            <div style="display: inline"><a target="_blank" href="http://bbs.pediy.com/">看雪</a></div>
+            <div style="display: inline"><a target="_blank" href="http://itjuzi.com/">IT桔子</a></div>
+            <div style="display: inline"><a target="_blank"
+                   href="http://docs.oracle.com/javase/7/docs/technotes/guides/jni/spec/invocation.html">JNI文档</a></div>
+            <div style="display: inline"><a target="_blank" href="https://www.remotejobsexpert.com/">RemoteJob</a></div>
+            <div style="display: inline"><a target="_blank" href="http://bbs.pcbeta.com/">远景</a></div>
+        </div>
+    </div>
     <div class="mastfoot">
         <div class="inner">
             <p>Powered by <a href="https://github.com/sodazhcn">Github</a>, Email:sodazhcn@163.com</p>
@@ -129,7 +124,7 @@
     </div>
 </center>
 <script src="static/js/jquery.min.js"></script>
-<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/bootsdivap.min.js"></script>
 <script src="static/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
